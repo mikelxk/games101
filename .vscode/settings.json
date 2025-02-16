@@ -1,0 +1,5 @@
+{
+    "cmake.debugConfig": {
+        "miDebuggerPath": "${extensionInstallFolder:ms-vscode.cpptools}/debugAdapters/lldb-mi/bin/lldb-mi"
+    },
+}

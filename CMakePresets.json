@@ -2,9 +2,17 @@
     "version": 2,
     "configurePresets": [
       {
-        "name": "vcpkg",
+        "name": "win",
         "generator": "Visual Studio 17 2022",
         "binaryDir": "${sourceDir}/build",
+        "cacheVariables": {
+          "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
+        }
+      },
+      {
+        "name":"mac",
+        "generator":"Ninja",
+        "binaryDir":"${sourceDir}/build",
         "cacheVariables": {
           "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
         }

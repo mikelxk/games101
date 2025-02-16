@@ -2,10 +2,17 @@
     "version": 2,
     "configurePresets": [
       {
-        "name": "default",
-        "inherits": "vcpkg",
+        "name": "winDefault",
+        "inherits": "win",
         "environment": {
           "VCPKG_ROOT": "C:/src/vcpkg"
+        }
+      },
+      {
+        "name":"macDefault",
+        "inherits":"mac",
+        "environment": {
+          "VCPKG_ROOT": "/Users/xiaokaili/vcpkg"
         }
       }
     ]
