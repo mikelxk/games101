@@ -15,8 +15,8 @@
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": [
-		"export  CMAKE_MAKE_PROGRAM=/home/vscode/.asdf/shims/ninja >> /etc/bash.bashrc",
-		"apt install libxinerama-dev libxcursor-dev xorg-dev libglu1-mesa-dev pkg-config"
+		"sudo apt update",
+		"sudo apt install libxinerama-dev libxcursor-dev xorg-dev libglu1-mesa-dev pkg-config"
 	],
 	// Configure tool-specific properties.
 	// "customizations": {},
