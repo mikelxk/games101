@@ -1,0 +1,11 @@
+{
+  "dependencies": [
+    "eigen3",
+    "opencv",
+    "games101-cgl",
+    {
+      "name": "getopt-win32",
+      "platform": "windows"
+    }
+  ]
+}
