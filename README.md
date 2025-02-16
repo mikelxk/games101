@@ -6,3 +6,6 @@ Games101 Homework setup with VSCode , vcpkg and CMake.
 3. Install [C++ extension in VSCode](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
 4. Install [CMake Tools extension in VSCode](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)
 5. Select corresponding CMake config using `Ctrl+Shift+P` -> `CMake: Configure`
+7. Go to `CMake: PROJECT OUTLINE` to debug the project
+6. For mac user, add `"miDebuggerPath": "${extensionInstallFolder:ms-vscode.cpptools}/debugAdapters/lldb-mi/bin/lldb-mi"`
+in `"cmake.debugConfig"` in `settings.json` to make lldb work.
