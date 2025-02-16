@@ -1,19 +1,26 @@
 {
-    "version": 2,
-    "configurePresets": [
-      {
-        "name": "winDefault",
-        "inherits": "win",
-        "environment": {
-          "VCPKG_ROOT": "C:/src/vcpkg"
-        }
-      },
-      {
-        "name":"macDefault",
-        "inherits":"mac",
-        "environment": {
-          "VCPKG_ROOT": "/Users/xiaokaili/vcpkg"
-        }
+  "version": 2,
+  "configurePresets": [
+    {
+      "name": "win",
+      "inherits": "vs",
+      "environment": {
+        "VCPKG_ROOT": "C:/src/vcpkg"
       }
-    ]
-  }
+    },
+    {
+      "name": "mac",
+      "inherits": "ninja",
+      "environment": {
+        "VCPKG_ROOT": "/Users/xiaokaili/vcpkg"
+      }
+    },
+    {
+      "name": "linux",
+      "inherits": "ninja",
+      "environment": {
+        "VCPKG_ROOT": "/home/mike/vcpkg"
+      }
+    }
+  ]
+}

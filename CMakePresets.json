@@ -2,7 +2,7 @@
     "version": 2,
     "configurePresets": [
       {
-        "name": "win",
+        "name": "vs",
         "generator": "Visual Studio 17 2022",
         "binaryDir": "${sourceDir}/build",
         "cacheVariables": {
@@ -10,7 +10,7 @@
         }
       },
       {
-        "name":"mac",
+        "name":"ninja",
         "generator":"Ninja",
         "binaryDir":"${sourceDir}/build",
         "cacheVariables": {
