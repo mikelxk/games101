@@ -14,12 +14,24 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": [
-		"sudo apt update",
-		"sudo apt install libxinerama-dev libxcursor-dev xorg-dev libglu1-mesa-dev pkg-config"
-	],
+	// "postCreateCommand": [],
 	// Configure tool-specific properties.
-	// "customizations": {},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cmake-tools",
+				"ms-vscode.cpptools-extension-pack",
+				"frinkr.pdf"
+			]
+		},
+		"codespaces": {
+			"extensions": [
+				"ms-vscode.cmake-tools",
+				"ms-vscode.cpptools-extension-pack",
+				"frinkr.pdf"
+			]
+		}
+	},
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 }
