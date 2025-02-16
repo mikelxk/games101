@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
-project(pa6)
 
-set(CMAKE_CXX_STANDARD 17)
+project(pa6)
 
 add_executable(pa6 main.cpp Object.hpp Vector.cpp Vector.hpp Sphere.hpp global.hpp Triangle.hpp Scene.cpp
         Scene.hpp Light.hpp AreaLight.hpp BVH.cpp BVH.hpp Bounds3.hpp Ray.hpp Material.hpp Intersection.hpp

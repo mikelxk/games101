@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-# target homework_8
+
 file(GLOB_RECURSE SOURCE_FILES *.cpp)
 add_executable(pa8 ${SOURCE_FILES})
 
