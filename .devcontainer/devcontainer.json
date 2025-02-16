@@ -14,7 +14,10 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "export  CMAKE_MAKE_PROGRAM=/home/vscode/.asdf/shims/ninja >> /etc/bash.bashrc",
+	"postCreateCommand": [
+		"export  CMAKE_MAKE_PROGRAM=/home/vscode/.asdf/shims/ninja >> /etc/bash.bashrc",
+		"apt install libxinerama-dev libxcursor-dev xorg-dev libglu1-mesa-dev pkg-config"
+	],
 	// Configure tool-specific properties.
 	// "customizations": {},
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
