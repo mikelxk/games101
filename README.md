@@ -1,5 +1,5 @@
 # Games101 Homework
-Games101 Homework super easy setup with VSCode , vcpkg and CMake. Use this template to get started!
+Games101 Homework super easy setup with VSCode , vcpkg and CMake. Use this template or dire ctly on in Codespace to get started!
 ## Environment Setup
 1. Install [vcpkg](https://learn.microsoft.com/en-us/vcpkg/get_started/get-started-vscode)
 2. Install [CMake](https://cmake.org/install/) and add to PATH (Optional?)
